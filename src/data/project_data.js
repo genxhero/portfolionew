@@ -22,7 +22,7 @@ const project_data = [
     },
     {
         title: "Hedronite Attack",
-        image: ".images/hedronite_attack.png",
+        image: ".images/hedroniteattack.png",
         description: "Built in JavaScript using HTML5 and Canvas libraries, Hedronite Attack is a fast- paced, action - packed game with the kind of difficulty that anyone born in the 80s can appreciate!",
         github: "https://github.com/genxhero/vectorsigma",
         live: "https://genxhero.github.io/vectorsigma/"
