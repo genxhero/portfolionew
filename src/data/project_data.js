@@ -21,10 +21,10 @@ const project_data = [
         live: "https://cryptic-plains-92849.herokuapp.com/#/"
     },
     {
-        title:
-        image:
-        description:
-        github:
-        live: 
+        title: "Hedronite Attack",
+        image: ".images/hedronite_attack.png",
+        description: "Built in JavaScript using HTML5 and Canvas libraries, Hedronite Attack is a fast- paced, action - packed game with the kind of difficulty that anyone born in the 80s can appreciate!",
+        github: "https://github.com/genxhero/vectorsigma",
+        live: "https://genxhero.github.io/vectorsigma/"
     } 
 ]
