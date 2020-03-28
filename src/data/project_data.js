@@ -28,3 +28,5 @@ const project_data = [
         live: "https://genxhero.github.io/vectorsigma/"
     } 
 ]
+
+export default project_data;
