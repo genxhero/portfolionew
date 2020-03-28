@@ -1,8 +1,7 @@
 import React from 'react'
 
 const Project = props => {
-    const project = {props};
-    debugger;
+    const {project} = props;
     return (
         <div>
            <a href={project.live}> <h1>{project.title}</h1></a>     
