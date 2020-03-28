@@ -7,24 +7,24 @@ const project_data = [
         live: "https://afternoon-eyrie-69554.herokuapp.com/"
     }, 
     {
-        title:
-            image:
-        description:
-            github:
-        live: 
+        title: "Fliquor",
+        image: "./images/fliquor.png",
+        description: "Functonal clone of Flickr built with Rails on the backend, React on the frontend, and some very sweet CSS. Come on in, share your photos, leave comments, find you inspiration!",
+        github: "https://github.com/genxhero/fliquor",
+        live: "https://fliquor.herokuapp.com/#/"
     }, 
     {
         title:
-            image:
+        image:
         description:
-            github:
+        github:
         live: 
     },
     {
         title:
-            image:
+        image:
         description:
-            github:
+        github:
         live: 
     } 
 ]
