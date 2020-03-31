@@ -5,7 +5,8 @@ const Project = props => {
     return (
         <div>
            <a href={project.live}> <h1>{project.title}</h1></a>     
-           <p>{project.description}</p>
+            <p style={{ "width": "20rem" }}>{project.description}</p>
+           <img style={{"width": "20rem"}} src={project.image} />
            <h4><a href={project.github}>Github</a><a href={project.live}>Live Demo</a></h4> 
         </div>
     )
