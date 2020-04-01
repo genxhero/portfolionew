@@ -1,16 +1,18 @@
 import React, {useState} from 'react';
-import logo from './logo.svg';
 import './App.css';
-import Projects from './Projects';
 import Nav from './Nav';
 import MainContent from './MainContent';
 
 const App = () =>{
-
+  const [page, setPage] = useState(0)
+  const navigate = (e) => {
+    const index = e.currentTarget.getAttrribute("name")
+    setPage(index)
+  }
   return (
     <div className="App">
-       <Nav />
-       <MainContent /> 
+       <Nav navigate={navigate}/>
+       <MainContent page={page}/> 
     </div>
   );
 }
