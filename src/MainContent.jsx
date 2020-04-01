@@ -3,8 +3,9 @@ import Projects from './Projects';
 
 const PAGES = [<Projects />];
 
+
 const MainContent = () => {
-    const [page, setPage] = useState(0)
+    const {page} = props;
     return (
         <div>
             {PAGES[page]}
