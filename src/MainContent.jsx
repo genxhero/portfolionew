@@ -1,7 +1,8 @@
 import React, {useState} from 'react';
 import Projects from './Projects';
+import Photos from './Photos'
 
-const PAGES = [<Projects />];
+const PAGES = [<Projects />, <Photos />];
 
 
 const MainContent = () => {
