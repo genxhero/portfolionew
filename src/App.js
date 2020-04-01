@@ -2,13 +2,15 @@ import React, {useState} from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Projects from './Projects';
+import Nav from './Nav';
+import MainContent from './MainContent';
 
 const App = () =>{
-  const PAGES = [<Projects />];
 
   return (
     <div className="App">
-       <Projects />
+       <Nav />
+       <MainContent /> 
     </div>
   );
 }
