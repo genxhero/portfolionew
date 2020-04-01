@@ -2,11 +2,11 @@ import React, {useState} from 'react';
 import {Link} from 'react-router-dom';
 
 const Nav = () => {
-    
+    const {navigate} = props
     return (
         <div>
-            <span name="0">Projects</span>
-            <span name="1">Photos</span>
+            <span onClick={navigate} name="0">Projects</span>
+            <span onClick={navigate} name="1">Photos</span>
         </div>
     )
 
