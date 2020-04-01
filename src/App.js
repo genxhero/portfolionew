@@ -7,7 +7,6 @@ const App = () =>{
   const [page, setPage] = useState(0)
 
   const navigate = (e) => {
-    debugger
     const index = e.target.getAttribute("name")
     setPage(index)
   }
