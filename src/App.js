@@ -5,9 +5,10 @@ import MainContent from './MainContent';
 
 const App = () =>{
   const [page, setPage] = useState(0)
-  
+
   const navigate = (e) => {
-    const index = e.currentTarget.getAttrribute("name")
+    debugger
+    const index = e.target.getAttribute("name")
     setPage(index)
   }
 

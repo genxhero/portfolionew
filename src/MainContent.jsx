@@ -5,7 +5,7 @@ import Photos from './Photos'
 const PAGES = [<Projects />, <Photos />];
 
 
-const MainContent = () => {
+const MainContent = (props) => {
     const {page} = props;
     return (
         <div>
