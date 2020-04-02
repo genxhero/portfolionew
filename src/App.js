@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import './App.css';
+import './App.scss';
 import Nav from './Nav';
 import MainContent from './MainContent';
 
