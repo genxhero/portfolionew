@@ -8,7 +8,7 @@ const PAGES = [<Projects />, <Photos />];
 const MainContent = (props) => {
     const {page} = props;
     return (
-        <div>
+        <div className="main-content">
             {PAGES[page]}
         </div>
     )
