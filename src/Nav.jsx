@@ -1,11 +1,11 @@
 import React, {useState} from 'react';
 
 const Nav = (props) => {
-    const {navigate} = props
+    const {navigate, page} = props
     return (
         <div className="nav">
-            <span className="nav-link" onClick={navigate} name="0">Projects</span>
-            <span className="nav-link" onClick={navigate} name="1">Photos</span>
+            <span className={`nav-link ${page === 0 ? 'active': ''}`} onClick={navigate} name="0">Projects</span>
+            <span className={`nav-link ${page === 1 ? 'active' : ''}`} onClick={navigate} name="1">Photos</span>
         </div>
     )
 
