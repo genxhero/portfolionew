@@ -6,3 +6,7 @@
 .nav-link {
     padding: 1rem;
 }
+
+.active {
+    font-weight: bold;
+}
