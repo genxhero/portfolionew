@@ -4,7 +4,7 @@ import Nav from './Nav';
 import MainContent from './MainContent';
 
 const App = () =>{
-  const [page, setPage] = useState(0)
+  const [page, setPage] = useState(1)
 
   const navigate = (e) => {
     const index = parseInt(e.target.getAttribute("name"));
