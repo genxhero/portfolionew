@@ -5,8 +5,8 @@
 
 .nav-link {
     padding: 1rem;
+        &.active {
+        font-weight: bold;
+    }
 }
 
-.active {
-    font-weight: bold;
-}
