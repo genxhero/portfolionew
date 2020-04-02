@@ -13,7 +13,7 @@ const App = () =>{
 
   return (
     <div className="App">
-       <Nav navigate={navigate}/>
+       <Nav navigate={navigate} page={page}/>
        <MainContent page={page}/> 
     </div>
   );
