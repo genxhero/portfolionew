@@ -7,7 +7,7 @@ const App = () =>{
   const [page, setPage] = useState(0)
 
   const navigate = (e) => {
-    const index = e.target.getAttribute("name")
+    const index = parseInt(e.target.getAttribute("name"));
     setPage(index)
   }
 
