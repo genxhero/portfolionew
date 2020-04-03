@@ -1,0 +1,10 @@
+.projects-page {
+    display: flex;
+    flex-direction: column;
+}
+
+.projects-spread {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}

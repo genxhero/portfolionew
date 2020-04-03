@@ -4,14 +4,14 @@ import Nav from './Nav';
 import MainContent from './MainContent';
 
 const App = () =>{
-  const [page, setPage] = useState(1)
+  const [page, setPage] = useState(0)
 
   const navigate = (e) => {
     const index = parseInt(e.target.getAttribute("name"));
     setPage(index)
   }
 
-  return (
+  return ( 
     <div className="App">
        <Nav navigate={navigate} page={page}/>
        <MainContent page={page}/> 

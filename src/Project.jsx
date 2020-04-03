@@ -3,7 +3,7 @@ import React from 'react'
 const Project = props => {
     const {project} = props;
     return (
-        <div>
+        <div className="project">
            <a href={project.live}> {project.title}</a>     
             <p style={{ "width": "20rem" }}>{project.description}</p>
            <img style={{"width": "20rem"}} src={project.image} alt="Shut up, eslint."/>

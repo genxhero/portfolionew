@@ -5,8 +5,8 @@ import Project from './Project';
 const Projects = () => {
 
     return (
-        <div>
-            <div>
+        <div className="projects-page">
+            <div className="projects-spread">
                 {projects.map(project => <Project project={project}/>)}
             </div>
             <div>

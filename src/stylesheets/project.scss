@@ -1,0 +1,26 @@
+.project {
+    margin: 1rem;
+    padding: .5rem;
+}
+
+.project-title {
+    &:visited {
+
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.project-thumbnail {
+
+}
+
+.project-thumbnail > img {
+
+}
+
+.project-description {
+
+}
