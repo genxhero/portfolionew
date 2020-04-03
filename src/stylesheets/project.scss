@@ -4,6 +4,9 @@
 }
 
 .project-title {
+    font-size: large;
+    text-align: center;
+    width: 100%;
     &:visited {
 
     }
@@ -14,13 +17,13 @@
 }
 
 .project-thumbnail {
-
+    
 }
 
 .project-thumbnail > img {
-
+    width: 20rem;
 }
 
 .project-description {
-
+    width: 20rem;
 }
