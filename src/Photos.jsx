@@ -9,8 +9,8 @@ const Photos = props => {
 
             </div>
 
-            <div>
-                {LINKS.map( url => <Photo url={url} />)}
+            <div className="photos-spread">
+                {LINKS.map( url => <Photo url={url} key={url}/>)}
             </div>
         </div>
     )
