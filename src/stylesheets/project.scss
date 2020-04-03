@@ -1,12 +1,15 @@
 .project {
     margin: 1rem;
     padding: .5rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .project-title {
-    font-size: large;
+    font-size: xx-large;
     text-align: center;
     width: 100%;
+    text-decoration: none;
     &:visited {
 
     }
@@ -17,7 +20,9 @@
 }
 
 .project-thumbnail {
-    
+    padding: .3rem;
+    background: white;
+    border-radius: 5px;
 }
 
 .project-thumbnail > img {

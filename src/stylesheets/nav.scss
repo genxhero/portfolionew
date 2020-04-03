@@ -6,6 +6,8 @@
 .nav-link {
     padding: 1rem;
     margin-right: .5rem;
+    border-top-left-radius: 5px;
+    border-top-right-radius:  5px;
         &.active {
         font-weight: bold;
         background: rgba(255, 255, 255, .6);
