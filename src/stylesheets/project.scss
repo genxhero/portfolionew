@@ -1,5 +1,4 @@
 .project {
-    margin: 1rem;
     padding: .5rem;
     display: flex;
     flex-direction: column;
@@ -32,4 +31,25 @@
 
 .project-description {
     width: 20rem;
+}
+
+.project-link {
+    text-decoration: none;
+    color: black;
+    background: white;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    margin: .5rem;
+    border-radius: 6px;
+    &:visited {
+      text-decoration: none;
+    }
+
+    &:hover {
+        cursor: pointer;
+        background: lightgray;
+        transition: all .2s;
+    }
 }

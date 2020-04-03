@@ -10,14 +10,15 @@ const Project = props => {
         </a>
         <p className="project-description">{project.description}</p>
         <div className="project-thumbnail">
-          <img
-            src={project.image}
-            alt="Shut up, eslint."
-          />
+          <img src={project.image} alt="Shut up, eslint." />
         </div>
         <h4>
-          <a href={project.github}>Github</a>
-          <a href={project.live}>Live Demo</a>
+          <a className="project-link" href={project.github}>
+            Github
+          </a>
+          <a className="project-link" href={project.live}>
+            Live Demo
+          </a>
         </h4>
       </div>
     );
