@@ -1,14 +1,19 @@
 .nav {
     display: flex;
-    justify-content:  space-between;
+    justify-content:  flex-start;
 }
 
 .nav-link {
     padding: 1rem;
+    margin-right: .5rem;
         &.active {
         font-weight: bold;
         background: rgba(255, 255, 255, .6);
     }
     background: rgba(255, 255, 255, .5);
+
+    &:hover {
+        cursor: pointer;
+    }
 }
 

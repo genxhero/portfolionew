@@ -3,8 +3,12 @@
     margin: .5rem;
     padding: 0.5rem;
     width: 20.2rem;
-    background: white;
+    background: rgba(255, 255, 255, .5);
     border-radius: 4px;
+    &:hover {
+     background: rgba(255, 255, 255, 1);
+     transition: all .2s;
+    }
 }
 
 .photo > img {
