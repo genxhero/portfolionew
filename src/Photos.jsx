@@ -5,7 +5,7 @@ import LINKS from './constants/links';
 const Photos = props => {
     return (
         <div>
-            <div>
+            <div >
 
             </div>
 

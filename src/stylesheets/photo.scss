@@ -1,7 +1,10 @@
 .photo {
+    display: flex;
     margin: .5rem;
-    padding: .2rem;
+    padding: 0.5rem;
     width: 20.2rem;
+    background: white;
+    border-radius: 4px;
 }
 
 .photo > img {
