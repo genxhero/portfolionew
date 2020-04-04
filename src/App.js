@@ -3,19 +3,21 @@ import './App.scss';
 import Nav from './Nav';
 import MainContent from './MainContent';
 import BACKDROPS from './constants/backdrops';
-import {getRandomInt} from './helpers/helpers';
+import Background from './Background';
+import $ from 'jquery';
 
 const App = () =>{
   const [page, setPage] = useState(0)
   const [backdrop, cycleBackdrop] = useState(0);
 
-  useEffect(() => {
-    const interval = setInterval((BACKDRROPS) => {
-      let newBackdrop = backdrop === (BACKDROPS.length -1 ) ? 0 : (backdrop + 1);
-      cycleBackdrop(newBackdrop);
-    }, 10000);
-    return () => clearInterval(interval);
-  }, [backdrop])
+  // useEffect(() => {
+  //   const interval = setInterval((BACKDRROPS) => {
+  //     let newBackdrop = backdrop === (BACKDROPS.length -1 ) ? 0 : (backdrop + 1);
+  //     cycleBackdrop(newBackdrop);
+  //     $("App").fadeIn();
+  //   }, 2000);
+  //   return () => clearInterval(interval);
+  // }, [backdrop])
 
 
   const navigate = (e) => {
@@ -23,11 +25,13 @@ const App = () =>{
     setPage(index)
   }  
   return ( 
-    <div className="App" style={{"backgroundImage": `url(${BACKDROPS[backdrop]})`}}>
+    <div className="App" id="App" >
        <Nav navigate={navigate} page={page}/>
        <MainContent page={page}/> 
+       <Background />
     </div>
   );
 }
 
 export default App;
+//style={{"backgroundImage": `url(${BACKDROPS[backdrop]})`}}

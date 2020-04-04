@@ -4,13 +4,18 @@
 @import './stylesheets/photos.scss';
 @import './stylesheets/project.scss';
 @import './stylesheets/projects.scss';
+@import './stylesheets/background.scss';
 
 .App {
   // text-align: center;
   // background-image: url('https://ak3.picdn.net/shutterstock/videos/1007299423/thumb/1.jpg');;
-  background-size: contain;
+  // background-size: contain;
   padding: 1rem;
+  position: relative;
 }
 
 
+body {
+  position: relative;
+}
 
