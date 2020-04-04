@@ -10,11 +10,14 @@
     margin-right: .5rem;
     border-top-left-radius: 5px;
     border-top-right-radius:  5px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         &.active {
-        font-weight: bold;
-        background: rgba(255, 255, 255, .6);
+        font-weight: 900;
+        background: rgba(255, 255, 255, .7);
     }
-    background: rgba(255, 255, 255, .5);
+    background: rgba(255, 255, 255, .6);
 
     &:hover {
         cursor: pointer;
