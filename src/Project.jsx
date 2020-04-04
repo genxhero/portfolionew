@@ -4,7 +4,7 @@ const Project = props => {
     const {project} = props;
     return (
       <div className="project">
-        <a className="project-title" href={project.live}>
+        <a className="project-title" href={project.live} target="_blank">
           {" "}
           {project.title}
         </a>
@@ -13,10 +13,10 @@ const Project = props => {
           <img src={project.image} alt="Shut up, eslint." />
         </div>
         <h4>
-          <a className="project-link" href={project.github}>
+          <a className="project-link" href={project.github} target="_blank">
             Github
           </a>
-          <a className="project-link" href={project.live}>
+          <a className="project-link" href={project.live} target="_blank">
             Live Demo
           </a>
         </h4>
