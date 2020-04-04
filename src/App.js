@@ -2,13 +2,10 @@ import React, {useState, useEffect} from 'react';
 import './App.scss';
 import Nav from './Nav';
 import MainContent from './MainContent';
-import BACKDROPS from './constants/backdrops';
 import Background from './Background';
-import $ from 'jquery';
 
 const App = () =>{
   const [page, setPage] = useState(0)
-  const [backdrop, cycleBackdrop] = useState(0);
 
   // useEffect(() => {
   //   const interval = setInterval((BACKDRROPS) => {
@@ -34,4 +31,3 @@ const App = () =>{
 }
 
 export default App;
-//style={{"backgroundImage": `url(${BACKDROPS[backdrop]})`}}
