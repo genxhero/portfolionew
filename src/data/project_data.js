@@ -33,7 +33,7 @@ const project_data = [
   },
   {
     title: "Aaron Goddard's Portfolio",
-    image: "https://i.imgur.com/ey8oSSf.png",
+    image: "https://i.imgur.com/79zH1UY.jpg",
     description: "This very portfolio is, in and of itself, a React project",
     github: "https://github.com/genxhero/portfolionew",
     live: "https://genxhero.github.io/portfolionew/",
