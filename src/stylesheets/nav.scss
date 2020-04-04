@@ -1,6 +1,8 @@
 .nav {
     display: flex;
     justify-content:  flex-start;
+    position: relative;
+    z-index: 9000;
 }
 
 .nav-link {
