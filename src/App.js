@@ -7,23 +7,25 @@ import {getRandomInt} from './helpers/helpers';
 
 const App = () =>{
   const [page, setPage] = useState(0)
-  const [backdrop, cycleBackdrop] = useState(BACKDROPS[0]);
+  const [backdrop, cycleBackdrop] = useState(0);
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      cycleBackdrop(BACKDROPS[getRandomInt(0, BACKDROPS.length)])
-    }, 15000);
+    const interval = setInterval((BACKDRROPS) => {
+      let newBackdrop = backdrop === (BACKDROPS.length -1 ) ? 0 : (backdrop + 1);
+            console.log("Length:", BACKDROPS.length, "Current BG:", backdrop, "New BG:" , newBackdrop);
+          cycleBackdrop(newBackdrop);
+    }, 10000);
     return () => clearInterval(interval);
-  }, [])
+  }, [backdrop])
 
 
   const navigate = (e) => {
     const index = parseInt(e.target.getAttribute("name"));
     setPage(index)
-  }
-
+  }  
+  console.log(backdrop)
   return ( 
-    <div className="App" style={{"backgroundImage": `url(${backdrop})`}}>
+    <div className="App" style={{"backgroundImage": `url(${BACKDROPS[backdrop]})`}}>
        <Nav navigate={navigate} page={page}/>
        <MainContent page={page}/> 
     </div>
