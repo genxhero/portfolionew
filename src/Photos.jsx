@@ -5,8 +5,8 @@ import LINKS from './constants/links';
 const Photos = props => {
     return (
         <div>
-            <div >
-
+            <div className="photos-intro" >
+                <p>I am also a photographer - always looking for new event shoots, commissions, and models to expand my portfolio.  Below is a sample of my work</p>
             </div>
 
             <div className="photos-spread">
