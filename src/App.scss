@@ -6,6 +6,8 @@
 @import './stylesheets/projects.scss';
 @import './stylesheets/background.scss';
 @import './stylesheets/intro.scss';
+@import './stylesheets/fade.scss';
+@import './stylesheets/dissolve.scss';
 
 .App {
   // text-align: center;
@@ -19,6 +21,7 @@
 body {
   position: relative;
 }
+
 
 .fade-enter {
     opacity: 0.01;
@@ -37,3 +40,4 @@ body {
     opacity: 0.01;
     transition: opacity 300ms ease-in;
 }
+

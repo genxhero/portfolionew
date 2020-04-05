@@ -1,0 +1,17 @@
+.dissolve-enter {
+    opacity: 0.01;
+}
+
+.dissolve-enter.dissolve-enter-active {
+    opacity: 1;
+    transition: opacity 300ms ease-in;
+}
+
+.dissolve-exit {
+    opacity: 1;
+}
+
+.dissolve-exit.dissolve-exit-active {
+    opacity: 0.01;
+    transition: opacity 300ms ease-in;
+}
