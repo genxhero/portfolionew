@@ -9,6 +9,9 @@ const LINKS = [
   "https://i.imgur.com/4txKPlm.jpg",
   "https://i.imgur.com/puZxoD2.jpg",
   "https://i.imgur.com/TclNZbl.jpg",
+  "https://i.imgur.com/3fdpdtg.jpg",
+  "https://i.imgur.com/jG3qPQP.jpg",
+  "https://i.imgur.com/Lh3deDq.jpg",
 ];
 
 export default LINKS;
