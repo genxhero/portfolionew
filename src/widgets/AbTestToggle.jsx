@@ -16,3 +16,5 @@ const AbTestToggle = props => {
         </div>
     )
 }
+
+export default AbTestToggle;
