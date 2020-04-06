@@ -8,6 +8,7 @@
 @import './stylesheets/intro.scss';
 @import './stylesheets/fade.scss';
 @import './stylesheets/dissolve.scss';
+@import './stylesheets/about.scss';
 
 .App {
   // text-align: center;
@@ -23,21 +24,4 @@ body {
 }
 
 
-.fade-enter {
-    opacity: 0.01;
-}
-
-.fade-enter.fade-enter-active {
-    opacity: 1;
-    transition: opacity 300ms ease-in;
-}
-
-.fade-exit {
-    opacity: 1;
-}
-
-.fade-exit.fade-exit-active {
-    opacity: 0.01;
-    transition: opacity 300ms ease-in;
-}
 
