@@ -15,8 +15,8 @@ const App = () =>{
   }  
   return ( 
     <div className="App" id="App" >
-       <Intro />
-       <Nav navigate={navigate} page={page}/>
+       <Intro testGroup={testGroup}/>
+       <Nav navigate={navigate} page={page} testGroup={testGroup}/>
        <MainContent page={page} testGroup={testGroup}/> 
        <Background />
     </div>
