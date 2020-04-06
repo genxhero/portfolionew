@@ -16,6 +16,7 @@
         &.active {
         font-weight: 900;
         background: rgba(255, 255, 255, .7);
+        transition: all .3s ease;
     }
     background: rgba(255, 255, 255, .6);
 
