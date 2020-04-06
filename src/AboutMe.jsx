@@ -7,7 +7,7 @@ import React from 'react';
 
 const AboutMe = props => {
     return (
-        <div className="about-me">
+        <div className={`about-me ${props.top ? 'top' : ''}`}>
             <h1>About Me</h1>
             <p>My actual intro will be longer, columns with skills and stuff DO NOT DEPLOY UNTIL THIS IS COMPLETE!</p>
         </div>

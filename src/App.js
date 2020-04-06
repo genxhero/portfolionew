@@ -7,7 +7,7 @@ import Intro from './Intro';
 
 const App = () =>{
   const [page, setPage] = useState(0);
-  const [testGroup, setTestGroup] = useState("a")
+  const [testGroup, setTestGroup] = useState("b")
 
   const navigate = (e) => {
     const index = parseInt(e.target.getAttribute("name"));

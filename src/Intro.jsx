@@ -6,7 +6,7 @@ const Intro = (props) => {
         <div className="intro">
             <h1 className="name"> Aaron Russell Goddard</h1>
             <h2 className="title">Full-Stack Software Engineer</h2>
-            {props.testGroup === "a" && <AboutMe />}
+            {props.testGroup === "a" && <AboutMe top={true} />}
         </div>
     )
 }
