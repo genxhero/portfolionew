@@ -7,6 +7,7 @@ import Intro from './Intro';
 
 const App = () =>{
   const [page, setPage] = useState(0);
+  const [testGroup, setTestGroup] = useState("a")
 
   const navigate = (e) => {
     const index = parseInt(e.target.getAttribute("name"));
@@ -16,7 +17,7 @@ const App = () =>{
     <div className="App" id="App" >
        <Intro />
        <Nav navigate={navigate} page={page}/>
-       <MainContent page={page}/> 
+       <MainContent page={page} testGroup={testGroup}/> 
        <Background />
     </div>
   );
