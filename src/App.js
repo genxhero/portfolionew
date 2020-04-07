@@ -10,6 +10,18 @@ const App = () =>{
   const [page, setPage] = useState(0);
   const [testGroup, setTestGroup] = useState("b")
 
+  /**
+   * If more tests are added, will swap to a case statement.
+   */
+  const toggleTestGroup = (e) => {
+    e.preventDefault();
+    if (testGroup === "a") {
+      setTestGroup("b")
+    } else {
+      setTestGroup("a")
+    }
+  }
+
   const navigate = (e) => {
     const index = parseInt(e.target.getAttribute("name"));
     setPage(index)
@@ -19,7 +31,7 @@ const App = () =>{
        <Intro testGroup={testGroup}/>
        <Nav navigate={navigate} page={page} testGroup={testGroup}/>
        <MainContent page={page} testGroup={testGroup}/> 
-       <AbTestToggle toggle={setTestGroup}/>
+       <AbTestToggle toggle={toggleTestGroup} testGroup={testGroup}/>
        <Background />
     </div>
   );

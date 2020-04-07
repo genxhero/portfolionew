@@ -10,9 +10,13 @@ import React from 'react';
  * @param {*} props 
  */
 const AbTestToggle = props => {
+    const {toggle, testGroup} = props;
     return (
         <div className="ab-test-toggle">
-
+            <p>This is an A-B test for the page layout. Please try both out and let me know which you like best!</p>
+                <button onClick={toggle}>
+                    {testGroup === "a" ? "Group A" : "Group B"}
+                </button>
         </div>
     )
 }
