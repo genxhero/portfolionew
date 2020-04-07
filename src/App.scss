@@ -17,6 +17,8 @@
   // background-size: contain;
   padding: 1rem;
   position: relative;
+  height: -webkit-fill-available;
+  min-height: 100vh;
 }
 
 

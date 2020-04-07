@@ -1,7 +1,42 @@
 .ab-test-toggle {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: .8rem;
+    left: .8rem;
     z-index: 9000;
-    width: 10rem;
+    background: white;
+    padding: .3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.ab-test-toggle > button {
+    padding: .3rem;
+    border: none;
+    color: white;
+    background: blue;
+    user-select: none;
+    border-radius: 5px;
+}
+
+.ab-test-toggle > div {
+    padding: .3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.show-toggle {
+    position: absolute;
+    top: .8rem;
+    left: .8rem;
+    z-index: 9000;
+    background: white;
+    padding: .6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
 }

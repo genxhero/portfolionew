@@ -1,4 +1,5 @@
-import React from 'react';
+import React, {useState} from 'react';
+import {FaArrowAltCircleRight, FaArrowAltCircleLeft} from 'react-icons/fa';
 
 /**
  * Expected Props 
@@ -11,14 +12,25 @@ import React from 'react';
  */
 const AbTestToggle = props => {
     const {toggle, testGroup} = props;
+    const [hidden, toggleHidden] = useState(false)
+
+    const handleClick = () => {
+        toggleHidden(hidden ? false : true)
+    }
+
+   
     return (
-        <div className="ab-test-toggle">
-            <p>This is an A-B test for the page layout. Please try both out and let me know which you like best!</p>
-                <button onClick={toggle}>
-                    {testGroup === "a" ? "Group A" : "Group B"}
-                </button>
+      <div className={`ab-test-toggle ${hidden ? "collapsed" : ""}`}>
+        <div onClick={handleClick}>
+          {hidden ? <FaArrowAltCircleRight /> : <FaArrowAltCircleLeft />}
         </div>
-    )
+        {!hidden && (
+          <button onClick={toggle}>
+            {testGroup === "a" ? "Version A" : "Version B"}
+          </button>
+        )}
+      </div>
+    );
 }
 
 export default AbTestToggle;
