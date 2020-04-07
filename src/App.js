@@ -5,6 +5,8 @@ import MainContent from './MainContent';
 import Background from './Background';
 import Intro from './Intro';
 import AbTestToggle from './widgets/AbTestToggle';
+import { TransitionGroup, CSSTransition, Transition} from "react-transition-group";
+
 
 const App = () =>{
   const [page, setPage] = useState(0);
@@ -27,13 +29,22 @@ const App = () =>{
     setPage(index)
   }  
   return ( 
-    <div className="App" id="App" >
-       <Intro testGroup={testGroup}/>
-       <Nav navigate={navigate} page={page} testGroup={testGroup}/>
-       <MainContent page={page} testGroup={testGroup}/> 
-       <AbTestToggle toggle={toggleTestGroup} testGroup={testGroup}/>
-       <Background />
-    </div>
+
+      <TransitionGroup>
+          <CSSTransition
+            key={testGroup}
+            timeout={{ enter: 1000, exit: 1000 }}
+            classNames={"scroll"}
+          >
+        <div className="App" id="App" >
+          <Intro testGroup={testGroup}/>
+          <Nav navigate={navigate} page={page} testGroup={testGroup}/>
+          <MainContent page={page} testGroup={testGroup}/> 
+          <AbTestToggle toggle={toggleTestGroup} testGroup={testGroup}/>
+          <Background />
+        </div>
+     </CSSTransition>
+       </TransitionGroup>
   );
 }
 

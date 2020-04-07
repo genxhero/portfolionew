@@ -44,6 +44,7 @@
 
     &:hover {
         cursor: pointer;
+        background: rgb(42, 42, 226);
     }
 
 }
@@ -54,7 +55,10 @@
     justify-content: center;
     align-items: center;
     background: white;
+    font-size: larger;
     &:hover {
         cursor: pointer;
     }
+
+    
 }

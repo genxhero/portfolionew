@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
 import {FaArrowAltCircleRight, FaArrowAltCircleLeft} from 'react-icons/fa';
-import { TransitionGroup, CSSTransition } from "react-transition-group";
 
 
 /**

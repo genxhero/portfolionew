@@ -1,0 +1,31 @@
+.scroll-enter {
+    opacity: 0.01;
+     transform: scale(.1);
+    transform: translate3d(0px, -2000px, 0px);
+}
+
+.scroll-enter.scroll-enter-active {
+          position: absolute;
+
+    opacity: 1;
+     transform: scale(1);
+     transform: translate3d(0px, 0px, 0px);
+    transition: all 1000ms ease-in-out;
+}
+
+.scroll-exit {
+    opacity: 1;
+     transform: scale(1);
+    transform: translate3d(0px, 0px, 0px);
+
+}
+
+.scroll-exit.scroll-exit-active {
+          position: absolute;
+
+    opacity: 0.01;
+     transform: scale(1);
+    transform: translate3d(0px, 2000px, 0px);
+    transition: all 1000ms ease-in-out;
+
+}
