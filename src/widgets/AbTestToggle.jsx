@@ -1,5 +1,7 @@
 import React, {useState} from 'react';
 import {FaArrowAltCircleRight, FaArrowAltCircleLeft} from 'react-icons/fa';
+import { TransitionGroup, CSSTransition } from "react-transition-group";
+
 
 /**
  * Expected Props 
@@ -21,16 +23,34 @@ const AbTestToggle = props => {
    
     return (
       <div className={`ab-test-toggle ${hidden ? "collapsed" : ""}`}>
-        <div onClick={handleClick}>
+        <div className="show-hide-arrow" onClick={handleClick}>
           {hidden ? <FaArrowAltCircleRight /> : <FaArrowAltCircleLeft />}
         </div>
-        {!hidden && (
-          <button onClick={toggle}>
-            {testGroup === "a" ? "Version A" : "Version B"}
-          </button>
-        )}
+      
+            <button className={`toggle-btn  ${hidden ? 'collapsed' : ''}`} onClick={toggle}>
+              Switch
+            </button>
+    
       </div>
     );
 }
 
 export default AbTestToggle;
+
+
+/**
+ * 
+ *  <TransitionGroup>
+          <CSSTransition
+            key={hidden}
+            timeout={{ enter: 300, exit: 300 }}
+            classNames={"fade"}
+          >
+            <div className="">
+              {page === 0 && <Projects />}
+              {page === 1 && <Photos />}
+              {(page === 2 && testGroup === "b") && <AboutMe />}
+            </div>
+          </CSSTransition>
+        </TransitionGroup>
+ */
