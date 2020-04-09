@@ -11,12 +11,18 @@ import { TransitionGroup, CSSTransition, Transition} from "react-transition-grou
 const App = () =>{
   const [page, setPage] = useState(0);
   const [testGroup, setTestGroup] = useState("b")
+  const lever = new Audio(
+    "https://reactportfolio-sfx.s3-us-west-1.amazonaws.com/lever.mp3"
+  );
+
 
   /**
    * If more tests are added, will swap to a case statement.
    */
   const toggleTestGroup = (e) => {
     e.preventDefault();
+    lever.play();
+    setPage(0)
     if (testGroup === "a") {
       setTestGroup("b")
     } else {
