@@ -19,4 +19,16 @@
     border-radius: 4px;
     background-color: white;
     margin: 1rem;
+    display: flex;
+    &.reverse {
+        flex-direction: row-reverse;
+    }
+}
+
+.about-me-text {
+
+}
+
+.about-me-subtitle {
+    
 }
