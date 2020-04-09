@@ -1,5 +1,12 @@
 import React from 'react';
 
+/**
+ * Expected Props
+ * 
+ * url: String, link to a photograph
+ * 
+ * @param {*} props 
+ */
 const Photo = props => {
     return (
         <div className="photo">
