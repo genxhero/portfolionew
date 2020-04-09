@@ -4,6 +4,14 @@ import LINKS from './constants/links';
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 
 
+/**
+ * Expected Props
+ * 
+ * actually good question...I don't see any props here... 
+ * 
+ * 
+ * @param {*} props 
+ */
 const Photos = props => {
  
     return (
