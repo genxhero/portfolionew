@@ -1,4 +1,12 @@
 import React from 'react';
+/**
+ * Expected Props
+ * 
+ * navigate: Function
+ * page: Integer
+ * testGroup: String one of ["a", "b"]
+ * @param {*} props 
+ */
 
 const Nav = (props) => {
     const {navigate, page, testGroup} = props
