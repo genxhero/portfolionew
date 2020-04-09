@@ -1,5 +1,12 @@
 import React from 'react'
 
+/**
+ * Displays information for a single project.
+ * Expected Props
+ * 
+ * project: Object (TODO: shape)
+ * @param {*} props 
+ */
 const Project = props => {
     const {project} = props;
     return (
