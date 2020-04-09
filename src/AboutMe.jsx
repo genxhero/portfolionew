@@ -24,7 +24,16 @@ const AboutMe = props => {
 
         <div className="about-me-section reverse">
           <h3 className="about-me-subtitle">Skills</h3>
-          <ul className="about-me-list"></ul>
+          <ul className="about-me-list">
+              <li>React</li>
+              <li>JavaScript</li>
+              <li>Express</li>
+              <li>Ruby on Rails</li>
+              <li>Redux</li>
+              <li>GraphQL</li>
+              <li>HTML/5</li>
+              <li>CSS</li>
+          </ul>
         </div>
       </div>
     );
