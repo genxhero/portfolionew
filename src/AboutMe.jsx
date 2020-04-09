@@ -9,7 +9,7 @@ const AboutMe = props => {
     return (
       <div className={`about-me ${props.top ? "top" : ""}`}>
         <h1>About Me</h1>
-        <p>
+        <p className="about-me-section">
           I'm a career-driven and tenacious software develope.  Born and bred in Southern California, I grew up around the time the
           internet was really starting to take off. As a result, I've always
           immersed myself in technology. What I like about web development is
