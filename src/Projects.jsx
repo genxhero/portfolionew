@@ -3,7 +3,12 @@ import projects from './data/project_data';
 import Project from './Project';
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 
-
+/**
+ * 
+ * Displays a project component for every project in the database.
+ * 
+ * @param {*} props 
+ */
 const Projects = (props) => {
 
     return (
