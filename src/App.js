@@ -10,7 +10,7 @@ import { TransitionGroup, CSSTransition, Transition} from "react-transition-grou
 
 const App = () =>{
   const [page, setPage] = useState(0);
-  const [testGroup, setTestGroup] = useState("b")
+  const [testGroup, setTestGroup] = useState("a")
   const lever = new Audio(
     "https://reactportfolio-sfx.s3-us-west-1.amazonaws.com/lever.mp3"
   );

@@ -21,6 +21,10 @@
     margin: 1rem;
     display: flex;
     align-items: center;
+    &.multi {
+        align-items: center;
+        background: none;
+    }
     &.reverse {
         flex-direction: row-reverse;
     }
@@ -31,9 +35,15 @@
 }
 
 .about-me-subtitle {
-    margin-right: 1rem;
-    margin-left: 1rem;      
-    text-align: center; 
     font-size: 2rem;
     font-weight: 600;
+    text-align: center;
+}
+
+.about-me-list {
+    margin: .5rem;
+    padding: 1rem;
+    padding-right: 2rem;
+    border-radius: 4px;
+    background: white;
 }

@@ -22,9 +22,10 @@ const AboutMe = props => {
           </p>
         </div>
 
-        <div className={`about-me-section ${props.top ? "top" : ""}`}>
-          <h3 className="about-me-subtitle">Skills</h3>
-          <ul className="about-me-list">
+        <div className={`about-me-section multi ${props.top ? "top" : ""}`}>
+          <div className="about-me-list">
+            <h3 className="about-me-subtitle">Skills</h3>
+            <ul>
               <li>React</li>
               <li>JavaScript</li>
               <li>Express</li>
@@ -33,16 +34,20 @@ const AboutMe = props => {
               <li>GraphQL</li>
               <li>HTML/5</li>
               <li>CSS</li>
-          </ul>
-          <h3 className="about-me-subtitle">Hobbies</h3>
-          <ul className="about-me-list">
-              <li>Writing</li>
+            </ul>
+           
+          </div>
+          <div className="about-me-list">
+            <h3 className="about-me-subtitle">Hobbies</h3>
+              <ul>
+                <li>Writing</li>
               <li>Video Games</li>
-              <li>Adventuring</li>
+              <li>Road Trips</li>
               <li>Photography</li>
               <li>Cooking</li>
               <li>Comedy</li>
-          </ul>
+              </ul>
+          </div>
         </div>
       </div>
     );
