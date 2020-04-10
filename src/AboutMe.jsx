@@ -34,6 +34,15 @@ const AboutMe = props => {
               <li>HTML/5</li>
               <li>CSS</li>
           </ul>
+          <h3 className="about-me-subtitle">Hobbies</h3>
+          <ul className="about-me-list">
+              <li>Writing</li>
+              <li>Video Games</li>
+              <li>Adventuring</li>
+              <li>Photography</li>
+              <li>Cooking</li>
+              <li>Comedy</li>
+          </ul>
         </div>
       </div>
     );
