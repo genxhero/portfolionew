@@ -8,7 +8,7 @@ import React from 'react';
 const AboutMe = props => {
     return (
       <div className={`about-me ${props.top ? "top" : ""}`}>
-        <h1>About Me</h1>
+        {props.top && <h1>About Me</h1>}
         <div className="about-me-section">
           <h3 className="about-me-subtitle">History</h3>
           <p className="about-me-text">
@@ -22,7 +22,7 @@ const AboutMe = props => {
           </p>
         </div>
 
-        <div className="about-me-section reverse">
+        <div className="about-me-section">
           <h3 className="about-me-subtitle">Skills</h3>
           <ul className="about-me-list">
               <li>React</li>

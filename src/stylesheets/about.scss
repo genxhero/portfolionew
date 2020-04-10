@@ -20,15 +20,18 @@
     background-color: white;
     margin: 1rem;
     display: flex;
+    align-items: center;
     &.reverse {
         flex-direction: row-reverse;
     }
 }
 
 .about-me-text {
-
+    padding: .5rem;
 }
 
 .about-me-subtitle {
-    
+    margin-right: 1rem;
+    margin-left: 1rem;      
+    text-align: center; 
 }
