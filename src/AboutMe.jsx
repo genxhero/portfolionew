@@ -9,7 +9,7 @@ const AboutMe = props => {
     return (
       <div className={`about-me ${props.top ? "top" : ""}`}>
         {props.top && <h1>About Me</h1>}
-        <div className="about-me-section">
+        <div className={`about-me-section ${props.top ? "top" : ""}`}>
           <h3 className="about-me-subtitle">History</h3>
           <p className="about-me-text">
              Born and bred in Southern California, I grew up around the time the internet was
@@ -22,7 +22,7 @@ const AboutMe = props => {
           </p>
         </div>
 
-        <div className="about-me-section">
+        <div className={`about-me-section ${props.top ? "top" : ""}`}>
           <h3 className="about-me-subtitle">Skills</h3>
           <ul className="about-me-list">
               <li>React</li>
