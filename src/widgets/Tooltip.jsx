@@ -8,7 +8,8 @@ const Tooltip = props => {
     const style = {"color": color, "background": background, [orientation.name]: `${orientation.value}` }
     console.log(style)
     return (
-        <div className={`tooltip ${hidden ? 'hidden' : ''}`} style={style}>
+        <div className={`tooltip ${hidden ? 'hidden' : ''} ${direction}`} style={style}>
+             {message} 
         </div>
     )
 }

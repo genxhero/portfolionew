@@ -13,10 +13,10 @@ import Tooltip from './Tooltip';
  * @param {*} props 
  */
 const AbTestToggle = props => {
-    const {toggle} = props;
+    const {toggle, testGroup} = props;
     const [hidden, toggleHidden] = useState(false)
     // Not sure about the nomenclature here
-    const [tooltips, toggleTooltips] = useState({"arrow": true, "switch": false})
+    const [tooltips, toggleTooltips] = useState({"arrow": false, "switch": false})
 
     const handleClick = () => {
         toggleHidden(hidden ? false : true)
@@ -31,13 +31,30 @@ const AbTestToggle = props => {
              onMouseLeave={() => toggleTooltips({ "arrow": false })}
              >
           {hidden ? <FaArrowAltCircleRight /> : <FaArrowAltCircleLeft />}
-          <Tooltip color="black" background="white" direction="under"/>
+          <Tooltip 
+            hidden={!tooltips["arrow"]}
+            color="black" 
+            background="white" 
+            direction="under" 
+            message={hidden ? 'Show' : "Hide"}
+            />
         </div>
       
-            <button className={`toggle-btn  ${hidden ? 'collapsed' : ''}`} onClick={toggle} name="switch">
+            <button 
+               className={`toggle-btn  ${hidden ? 'collapsed' : ''}`} 
+               onClick={toggle} name="switch"
+               onMouseEnter={() => toggleTooltips({ "switch": true })}
+               onMouseLeave={() => toggleTooltips({ "switch": false })}
+               >
               Switch
             </button>
-    
+        <Tooltip
+          hidden={!tooltips["switch"]}
+          color="black"
+          background="white"
+          direction="under"
+          message={`Two versions of this page were made. You are in test group "${testGroup.toUpperCase()}". Click the button to change test groups and switch between page layouts.`}
+        />
       </div>
     );
 }
@@ -47,7 +64,7 @@ export default AbTestToggle;
 
 /**
  * 
- *  hidden={!tooltips["arrow"]}
+ *    
  *  <TransitionGroup>
           <CSSTransition
             key={hidden}

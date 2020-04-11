@@ -1,9 +1,62 @@
 .tooltip {
     position: absolute;
+    min-width: fit-content;
     z-index: 9000;
-    padding: 1rem;
+    padding: .5rem;
+    font-size: 12px;
+    border-radius: 4px;
+    margin-top: .2rem;
+    padding-top: .2rem;
+    padding-bottom: .2rem;
+    font-weight: 800;
+    opacity: 1;
     &.hidden {
-        visibility: hidden;
+        transition: opacity .2s ease;
+        opacity: 0;
     }
     background: white;
+
+    &.over::after {
+        content: " ";
+        position: absolute;
+        top: 100%; 
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: white transparent transparent transparent;
+        }
+
+    &.under::after {
+        content: " ";
+        position: absolute;
+        bottom: 100%;  
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: transparent transparent white transparent;
+    }
+
+    &.right::after {
+        content: " ";
+        position: absolute;
+        top: 50%;
+        right: 100%; /* To the left of the tooltip */
+        margin-top: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: transparent white transparent transparent;
+   }
+
+   &.left::after {
+        content: " ";
+        position: absolute;
+        top: 50%;
+        left: 100%; /* To the right of the tooltip */
+        margin-top: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: transparent transparent transparent white;
+   }
 }
