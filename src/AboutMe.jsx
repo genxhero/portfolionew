@@ -9,13 +9,10 @@ const AboutMe = props => {
     return (
       <div className={`about-me ${props.top ? "top" : ""}`}>
         {props.top && <h1>About Me</h1>}
-     
-
-        <div className={`about-me-section multi ${props.top ? "top" : ""}`}>
-
+        <div className={`about-me-section ${props.top ? "top" : ""}`}>
           <h3 className="about-me-subtitle">History</h3>
           <p className="about-me-text">
-            Born and bred in Southern California, I grew up around the time the internet was
+             Born and bred in Southern California, I grew up around the time the internet was
             really starting to take off. As a result, I've always immersed
             myself in technology. What I like about web development is the
             gestalt, the omnibus: every little thing about it fills me with
@@ -23,8 +20,9 @@ const AboutMe = props => {
             for puzzles), the way I can exercise my creativity on a canvas of
             code, I could go on forever!
           </p>
+        </div>
 
-
+        <div className={`about-me-section multi ${props.top ? "top" : ""}`}>
           <div className="about-me-list">
             <span className="about-me-subtitle">Skills</span>
             <ul>
@@ -52,16 +50,10 @@ const AboutMe = props => {
           </div>
 
 
-
+          
         </div>
       </div>
     );
 }
 
 export default AboutMe;
-
-/**
- *    <div className={`about-me-section ${props.top ? "top" : ""}`}>
-
-        </div>
- */
