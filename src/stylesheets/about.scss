@@ -9,7 +9,7 @@
 
 .about-me >  h1 {
     text-align: center;
-    font-weight: 300;
+    font-weight: 800;
 }
 
 .about-me-section {
@@ -20,10 +20,12 @@
     background-color: white;
     margin: 1rem;
     display: flex;
+    flex-direction: column;
     align-items: center;
     &.multi {
-        align-items: center;
+        flex-direction: row;
         background: none;
+        align-items: baseline;
     }
     &.reverse {
         flex-direction: row-reverse;
@@ -32,18 +34,23 @@
 
 .about-me-text {
     padding: .5rem;
+    font-weight: 600;
 }
 
 .about-me-subtitle {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 600;
     text-align: center;
+    width: 100%;
 }
 
 .about-me-list {
     margin: .5rem;
     padding: 1rem;
-    padding-right: 2rem;
+    width: 10rem;
     border-radius: 4px;
     background: white;
+    & > ul {
+        font-weight: 600;
+    }
 }
