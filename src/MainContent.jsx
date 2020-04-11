@@ -4,7 +4,6 @@ import Photos from './Photos';
 import AboutMe from './AboutMe';
 import { TransitionGroup, CSSTransition} from "react-transition-group";
 
-const PAGES = [<Projects />, <Photos />, <AboutMe />]
 
 const MainContent = (props) => {
     const {page, testGroup} = props;
