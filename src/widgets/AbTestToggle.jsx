@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import {FaArrowAltCircleRight, FaArrowAltCircleLeft} from 'react-icons/fa';
+import Tooltip from './Tooltip';
 
 
 /**
@@ -14,6 +15,8 @@ import {FaArrowAltCircleRight, FaArrowAltCircleLeft} from 'react-icons/fa';
 const AbTestToggle = props => {
     const {toggle} = props;
     const [hidden, toggleHidden] = useState(false)
+    // Not sure about the nomenclature here
+    const [tooltips, toggleTooltips] = useState({"arrow": true, "switch": false})
 
     const handleClick = () => {
         toggleHidden(hidden ? false : true)
@@ -22,11 +25,16 @@ const AbTestToggle = props => {
    
     return (
       <div className={`ab-test-toggle ${hidden ? "collapsed" : ""}`}>
-        <div className="show-hide-arrow" onClick={handleClick}>
+        <div className="show-hide-arrow" 
+             onClick={handleClick} name="arrow" 
+             onMouseEnter={() => toggleTooltips({"arrow": true})}
+             onMouseLeave={() => toggleTooltips({ "arrow": false })}
+             >
           {hidden ? <FaArrowAltCircleRight /> : <FaArrowAltCircleLeft />}
+          <Tooltip color="black" background="white" direction="under"/>
         </div>
       
-            <button className={`toggle-btn  ${hidden ? 'collapsed' : ''}`} onClick={toggle}>
+            <button className={`toggle-btn  ${hidden ? 'collapsed' : ''}`} onClick={toggle} name="switch">
               Switch
             </button>
     
@@ -39,6 +47,7 @@ export default AbTestToggle;
 
 /**
  * 
+ *  hidden={!tooltips["arrow"]}
  *  <TransitionGroup>
           <CSSTransition
             key={hidden}

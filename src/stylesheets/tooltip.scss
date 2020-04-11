@@ -1,0 +1,9 @@
+.tooltip {
+    position: absolute;
+    z-index: 9000;
+    padding: 1rem;
+    &.hidden {
+        visibility: hidden;
+    }
+    background: white;
+}
