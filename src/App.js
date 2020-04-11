@@ -12,7 +12,7 @@ const App = () =>{
   const [page, setPage] = useState(0);
   const [testGroup, setTestGroup] = useState("a")
   const lever = new Audio(
-    "https://reactportfolio-sfx.s3-us-west-1.amazonaws.com/lever.mp3"
+    "https://reactportfolio-sfx.s3-us-west-1.amazonaws.com/typewriter-line-break-1.wav"
   );
 
 
@@ -21,7 +21,7 @@ const App = () =>{
    */
   const toggleTestGroup = (e) => {
     e.preventDefault();
-    lever.play();
+    setTimeout(lever.play(), 2000)
     setPage(0)
     if (testGroup === "a") {
       setTestGroup("b")
