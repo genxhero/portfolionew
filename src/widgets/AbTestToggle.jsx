@@ -12,7 +12,7 @@ import {FaArrowAltCircleRight, FaArrowAltCircleLeft} from 'react-icons/fa';
  * @param {*} props 
  */
 const AbTestToggle = props => {
-    const {toggle, testGroup} = props;
+    const {toggle} = props;
     const [hidden, toggleHidden] = useState(false)
 
     const handleClick = () => {
