@@ -10,8 +10,9 @@
     padding-bottom: .2rem;
     font-weight: 800;
     opacity: 1;
+    transition: opacity .3s ease;
     &.hidden {
-        transition: opacity .2s ease;
+        transition: opacity .3s ease;
         opacity: 0;
     }
     background: white;
