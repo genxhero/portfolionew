@@ -5,7 +5,7 @@ import MainContent from './MainContent';
 import Background from './Background';
 import Intro from './Intro';
 import AbTestToggle from './widgets/AbTestToggle';
-import { TransitionGroup, CSSTransition, Transition} from "react-transition-group";
+import { TransitionGroup, CSSTransition} from "react-transition-group";
 
 
 const App = () =>{
