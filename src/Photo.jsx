@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 /**
  * Expected Props
@@ -13,6 +14,10 @@ const Photo = props => {
             <img alt="this is an alt. under protest" src={props.url}/>
         </div>
     )
+}
+
+Photo.propTypes = {
+    url: PropTypes.string
 }
 
 export default Photo;
