@@ -22,7 +22,6 @@ const App = () =>{
   const toggleTestGroup = (e) => {
     e.preventDefault();
     lever.play();
-    setPage(0)
     if (testGroup === "a") {
       setTestGroup("b")
     } else {
