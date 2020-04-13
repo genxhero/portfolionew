@@ -1,5 +1,6 @@
 import React from 'react';
 import AboutMe from './AboutMe';
+import PropTypes from 'prop-types';
 
 const Intro = (props) => {
     return (
@@ -9,6 +10,11 @@ const Intro = (props) => {
             {props.testGroup === "a" && <AboutMe top={true} />}
         </div>
     )
+}
+
+
+Intro.defaultProps = {
+    testGroup: "a"
 }
 
 export default Intro;
