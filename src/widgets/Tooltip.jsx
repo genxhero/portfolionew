@@ -14,4 +14,12 @@ const Tooltip = props => {
     )
 }
 
+Tooltip.propTypes = {
+    background: PropTypes.string,
+    color: PropTypes.string,
+    message: PropTypes.string,
+    direction: PropTypes.string,
+    hidden: PropTypes.bool
+}
+
 export default Tooltip;
