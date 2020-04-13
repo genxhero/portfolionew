@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 /**
  * Expected Props
  * 
@@ -18,6 +19,12 @@ const Nav = (props) => {
         </div>
     )
 
+}
+
+Nav.propTypes = {
+    navigate: PropTypes.func,
+    page: PropTypes.number,
+    testGroup: PropTypes.string
 }
 
 export default Nav;
