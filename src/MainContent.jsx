@@ -3,6 +3,7 @@ import Projects from './Projects';
 import Photos from './Photos';
 import AboutMe from './AboutMe';
 import { TransitionGroup, CSSTransition} from "react-transition-group";
+import PropTypes from 'prop-types';
 
 
 const MainContent = (props) => {
@@ -25,6 +26,11 @@ const MainContent = (props) => {
       </div>
     );
 
+}
+
+MainContent.propTypes = {
+  page: PropTypes.number,
+  testGroup: PropTypes.string
 }
 
 export default MainContent;
