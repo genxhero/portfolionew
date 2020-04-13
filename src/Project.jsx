@@ -1,5 +1,5 @@
 import React from 'react'
-
+import PropTypes from 'prop-types';
 /**
  * Displays information for a single project.
  * Expected Props
@@ -44,6 +44,10 @@ const Project = props => {
         </h4>
       </div>
     );
+}
+
+Project.propTypes = {
+  project: PropTypes.object
 }
 
 export default Project;
