@@ -17,4 +17,7 @@ Intro.defaultProps = {
     testGroup: "a"
 }
 
+Intro.propTypes = {
+    testGroup: PropTypes.string
+}
 export default Intro;
