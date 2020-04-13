@@ -15,5 +15,7 @@ export const positionFinder = (direction) => {
       return { name: "left", value: "-2rem" }
     case "right":
       return { name: "left", value: "3rem" }
+      default:
+        return {name: "Shut Up", value: "Go climb a tree, eslint"}
   }
 }
