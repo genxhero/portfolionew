@@ -2,6 +2,11 @@ import React, {useState, useEffect} from 'react';
 import BACKDROPS from "./constants/backdrops";
 import $ from 'jquery';
 
+/**
+ * Rotating Background
+ * 
+ * @param {*} props 
+ */
 const Background = (props) => {
     const [index, cycleBackdrop] = useState(0);    
     useEffect(() => {
