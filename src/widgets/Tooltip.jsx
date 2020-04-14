@@ -2,6 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import {positionFinder} from '../helpers/helpers';
 
+/**
+ * 
+ * A simple tooltip that floats, can be located anywhere relative to the parent component.
+ * 
+ * @param {*} props 
+ */
 const Tooltip = props => {
     const {background, color, message, direction, hidden} = props;
     const orientation = positionFinder(direction);
