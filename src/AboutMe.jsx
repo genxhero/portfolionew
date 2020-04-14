@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types'
 
 /**
  * TODO: in/out animation unless that's going to be attached to the main app's testGroup stateslice?
@@ -54,6 +55,10 @@ const AboutMe = props => {
         </div>
       </div>
     );
+}
+
+AboutMe.propTypes = {
+  top: PropTypes.bool
 }
 
 export default AboutMe;
