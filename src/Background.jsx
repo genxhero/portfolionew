@@ -4,7 +4,7 @@ import $ from 'jquery';
 
 /**
  * Rotating Background
- * 
+ * TODO: Refactor to use CSS Transition.
  * @param {*} props 
  */
 const Background = (props) => {
