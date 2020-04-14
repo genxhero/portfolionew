@@ -29,6 +29,11 @@ const App = () =>{
     }
   }
 
+  /**
+   * Load a different React component, to get around Netlify's difficulty with React Router
+   * 
+   * @param {*} e 
+   */
   const navigate = (e) => {
     const index = parseInt(e.target.getAttribute("name"));
     setPage(index)
