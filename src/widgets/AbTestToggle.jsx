@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import {FaArrowAltCircleRight, FaArrowAltCircleLeft} from 'react-icons/fa';
 import Tooltip from './Tooltip';
+import PropTypes from 'prop-types';
 
 
 /**
@@ -57,6 +58,11 @@ const AbTestToggle = props => {
         />
       </div>
     );
+}
+
+AbTestToggle.propTypes = {
+  toggle: PropTypes.func,
+  testGroup: PropTypes.string
 }
 
 export default AbTestToggle;
