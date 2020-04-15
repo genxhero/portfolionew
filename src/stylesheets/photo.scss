@@ -1,3 +1,6 @@
+//Photo component 
+//TODO: more class names as i expand the component, add hover stuff.
+
 .photo {
     display: flex;
     margin: .5rem;
@@ -8,6 +11,9 @@
     &:hover {
      background: rgba(255, 255, 255, 1);
      transition: all .2s;
+     top: 50%;
+     right: 50%;
+     width: 40rem;
     }
 }
 
