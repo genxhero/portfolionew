@@ -11,12 +11,16 @@
     &:hover {
      background: rgba(255, 255, 255, 1);
      transition: all .2s;
-     top: 50%;
-     right: 50%;
-     width: 40rem;
+    
     }
 }
 
 .photo > img {
     width: 20rem;
+    &:hover {
+             width: 40rem;
+             position: absolute;
+              top: 50%;
+     right: 50%;
+    }
 }
