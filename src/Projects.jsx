@@ -5,7 +5,7 @@ import { TransitionGroup, CSSTransition } from "react-transition-group";
 
 /**
  * 
- * Displays a project component for every project in the database.
+ * Displays a project component for every project in the database. ewgf
  * 
  * @param {*} props 
  */
