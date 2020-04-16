@@ -6,6 +6,9 @@
 import React from 'react';
 
 const SpartaClicky = () => {
+    const bounce = () => {
+
+    }
     return (
         <div>
 
