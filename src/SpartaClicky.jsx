@@ -6,6 +6,7 @@
 import React, {useState} from 'react';
 
 const SpartaClicky = () => {
+    const [bouncing, toggleBounce] = useState(false)
     const bounce = () => {
 
     }
