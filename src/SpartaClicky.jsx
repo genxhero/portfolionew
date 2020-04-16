@@ -10,7 +10,7 @@ const SpartaClicky = () => {
 
     }
     return (
-        <div>
+        <div className="sparta" onClick={bounce}>
 
         </div>
     )
