@@ -6,6 +6,7 @@ import Background from './Background';
 import Intro from './Intro';
 import AbTestToggle from './widgets/AbTestToggle';
 import { TransitionGroup, CSSTransition} from "react-transition-group";
+import SpartaClicky from './SpartaClicky';
 
 
 const App = () =>{
@@ -49,6 +50,7 @@ const App = () =>{
         <div className="App" id="App" >
           <Intro testGroup={testGroup}/>
           <Nav navigate={navigate} page={page} testGroup={testGroup}/>
+          <SpartaClicky />
           <MainContent page={page} testGroup={testGroup}/> 
           <AbTestToggle toggle={toggleTestGroup} testGroup={testGroup}/>
           <Background />

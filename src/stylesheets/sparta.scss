@@ -1,0 +1,18 @@
+.sparta {
+    position: absolute;
+            z-index: 10000;
+
+    right: 0;
+    top: 0;
+    // background: none;
+        background-image: url('https://i.imgur.com/bO9Rc3k.png');
+        width: 5rem;
+        background-size: contain;
+    &.bouncing {
+        position: absolute;
+        z-index: 10000;
+        background-image: url('https://i.imgur.com/bO9Rc3k.png');
+        width: 5rem;
+        background-size: contain;
+    }
+}

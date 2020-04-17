@@ -8,14 +8,12 @@ import $ from 'jquery';
 
 const SpartaClicky = () => {
     const [bouncing, toggleBounce] = useState(false)
-    async const  bounce = () => {
+    const bounce = async () => {
         toggleBounce(true);
         //Do a bunch of jquery, wait for thing to come back to original position, then set bouncing to false again
     }
     return (
-        <div className={`sparta ${bouncing ? 'bouncing' : ''}`} id="sparta-clicky" onClick={bouncing ? () => false: bounce}>
-
-        </div>
+        <div className={`sparta ${bouncing ? 'bouncing' : ''}`} id="sparta-clicky" onClick={bouncing ? () => false: bounce} />
     )
 }
 
