@@ -12,7 +12,7 @@ const SpartaClicky = () => {
         toggleBounce(true);
     }
     return (
-        <div className={`sparta ${bouncing ? 'bouncing' : ''}`} id="sparta-clicky" onClick={bounce}>
+        <div className={`sparta ${bouncing ? 'bouncing' : ''}`} id="sparta-clicky" onClick={bouncing ? () => false: bounce}>
 
         </div>
     )
