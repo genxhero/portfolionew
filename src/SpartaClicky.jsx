@@ -9,10 +9,10 @@ import $ from 'jquery';
 const SpartaClicky = () => {
     const [bouncing, toggleBounce] = useState(false)
     const bounce = () => {
-
+        toggleBounce(true);
     }
     return (
-        <div className="sparta" id="sparta-clicky" onClick={bounce}>
+        <div className={`sparta ${bouncing ? 'bouncing' : ''}`} id="sparta-clicky" onClick={bounce}>
 
         </div>
     )
