@@ -4,6 +4,7 @@
  */
 
 import React, {useState} from 'react';
+import $ from 'jquery';
 
 const SpartaClicky = () => {
     const [bouncing, toggleBounce] = useState(false)
@@ -11,7 +12,7 @@ const SpartaClicky = () => {
 
     }
     return (
-        <div className="sparta" onClick={bounce}>
+        <div className="sparta" id="sparta-clicky" onClick={bounce}>
 
         </div>
     )
