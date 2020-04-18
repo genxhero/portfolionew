@@ -1,6 +1,8 @@
 /**
  * When you click on this, it bounces around the screen while an excerpt from Wizard's Last Rhymes plays
  * 
+ * The purpose is to show off how i can use jquery and React hooks to animate
+ * 
  */
 
 import React, {useState} from 'react';
