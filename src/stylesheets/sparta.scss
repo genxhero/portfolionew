@@ -10,9 +10,11 @@
     width: 7rem;
     height: 7rem;
     background-repeat: no-repeat;
+    transition: all 1s;
     &.bouncing {
         position: absolute;
         z-index: 10000;
+        transition: all 1s;
         background-image: url('https://i.imgur.com/bO9Rc3k.png');
         background-size: contain;
         
