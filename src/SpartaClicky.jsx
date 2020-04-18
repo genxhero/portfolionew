@@ -12,7 +12,9 @@ const SpartaClicky = () => {
     const [bouncing, toggleBounce] = useState(false)
     const bounce = async () => {
         // toggleBounce(true);
-        $('#sparta-clicky').css({ "-webkit-transform": "translate(-100px, 100px)" });
+        await $('#sparta-clicky').css({ "-webkit-transform": "translate(-100px, 600px)" });
+        $('#sparta-clicky').css({ "-webkit-transform": "translate(600px, -500px)" });
+
         //Do a bunch of jquery, wait for thing to come back to original position, then set bouncing to false again
     }
     return (
