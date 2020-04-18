@@ -9,12 +9,12 @@ import $ from 'jquery';
 const SpartaClicky = () => {
     const [bouncing, toggleBounce] = useState(false)
     const bounce = async () => {
-        toggleBounce(true);
-        $("#sparta-clicky").css({ "-webkit-transform": "translate(100px,100px)" });​
+        // toggleBounce(true);
+        $('#sparta-clicky').css({ "-webkit-transform": "translate(-100px, 100px)" });
         //Do a bunch of jquery, wait for thing to come back to original position, then set bouncing to false again
     }
     return (
-        <div className={`sparta ${bouncing ? 'bouncing' : ''}`} id="sparta-clicky" onClick={bouncing ? () => false: bounce} />
+        <div className={`sparta ${bouncing ? 'bouncing' : ''}`} id="sparta-clicky" onClick={bouncing ? () => false : bounce} />
     )
 }
 
