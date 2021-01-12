@@ -19,6 +19,7 @@ const SpartaClicky =  () => {
         const firstMove = () => {$('#sparta-clicky').css({
             top: 600,
             right: 200,
+            visibility: 'visible',
             WebkitTransform: 'rotate(90deg)'
         })}
         
