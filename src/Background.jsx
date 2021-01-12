@@ -10,7 +10,7 @@ import $ from 'jquery';
 const Background = (props) => {
     const [index, cycleBackdrop] = useState(0);    
     useEffect(() => {
-        const interval = setInterval((BACKDROPS) => {
+        const interval = setInterval((BACKDRROPS) => {
         let newIndex = index === (BACKDROPS.length -1 ) ? 0 : (index + 1);
         cycleBackdrop(newIndex);
         $("background-image").fadeIn();
