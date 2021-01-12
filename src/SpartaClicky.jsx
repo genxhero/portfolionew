@@ -45,10 +45,21 @@ const SpartaClicky =  () => {
                 WebkitTransform: 'rotate(360deg)'
             })
         }
+
+        const fifthMove = () => {
+                $('#sparta-clicky').css({
+                    top: 600,
+                    right: 1000,
+                    WebkitTransform: 'rotate(90deg)'
+                })
+        }
+
+
             firstMove();
             setTimeout(secondMove, 1000);
             setTimeout(thirdMove, 2000);
-            setTimeout(fourthMove, 3000)
+            setTimeout(fourthMove, 3000);
+            setTimeout(fifthMove, 4000)
         //   $('#sparta-clicky').css("-webkit-transform", "translate(-100px, 600px) rotate(-90deg)")
         //  setTimeout( () => $('#sparta-clicky').css("-webkit-transform", "translate(-800px, -1200px) rotate(-180deg)"), 1000)
         // setTimeout(() => $('#sparta-clicky').css("-webkit-transform", "translate(-1300px, 600px) rotate(-180deg)"), 1000)
