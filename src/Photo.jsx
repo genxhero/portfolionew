@@ -11,7 +11,7 @@ import PropTypes from 'prop-types';
 const Photo = props => {
     return (
         <div className="photo">
-            <img alt="this is an alt. under protest" src={props.url}/>
+            <img alt="" src={props.url}/>
         </div>
     )
 }
