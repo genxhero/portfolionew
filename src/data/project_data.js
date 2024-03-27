@@ -11,7 +11,7 @@ const project_data = [
     title: "Fliquor",
     image: "https://i.imgur.com/kgdpWhZ.png",
     description:
-      "Functonal clone of Flickr built with Rails on the backend, React on the frontend, and some very sweet CSS. Come on in, share your photos, leave comments, find you inspiration!",
+      "My oldest full-stack project, slated for a complete refactor and overhaul! Functonal clone of Flickr built with Rails on the backend, React on the frontend, and some very sweet CSS. Come on in, share your photos, leave comments, find you inspiration!",
     github: "https://github.com/genxhero/fliquor",
     live: "Pending",
   },
@@ -19,7 +19,7 @@ const project_data = [
     title: "Library of Legends",
     image: "https://i.imgur.com/NXOzKc0.png",
     description:
-      "A MERN application utilizing GraphQL for creating and storing characters made for the Pathfinder Role Playing Game Second Edition. It displays information to the user with a React front-end and uses GraphQL to make API calls to a Mongo and Express back-end while a character's image is stored on an AWS S3 bucket.",
+      "Live demo is currently down, pending migration from Heroku to Render! A MERN application utilizing GraphQL for creating and storing characters made for the Pathfinder Role Playing Game Second Edition. It displays information to the user with a React front-end and uses GraphQL to make API calls to a Mongo and Express back-end while a character's image is stored on an AWS S3 bucket.",
     github: "https://github.com/genxhero/libraryoflegends",
     live: "Pending",
   },
@@ -34,7 +34,7 @@ const project_data = [
   {
     title: "Aaron Goddard's Portfolio",
     image: "https://i.imgur.com/79zH1UY.jpg",
-    description: "This very portfolio is, in and of itself, a React project",
+    description: "This very portfolio is, in and of itself, a React project - every so often I will learn of a new React feature and update this here app to make it even cooler. Most recently, I added an A-B testing feature, check it out!",
     github: "https://github.com/genxhero/portfolionew",
     live: "https://genxhero.github.io/portfolionew/",
   },
