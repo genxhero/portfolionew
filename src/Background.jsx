@@ -13,6 +13,7 @@ const Background = (props) => {
     //
     const images = preloadImages(BACKDROPS);
 
+    //Item 1: Change BACKDROPS to be an array of images stored in the main folder
 
     useEffect(() => {
         const interval = setInterval((BACKDRROPS) => {
@@ -41,3 +42,5 @@ const preloadImages =  arrayOfImageURL => {
 }
 
 export default Background;
+
+//  BACKUP RETURN STATEMENT  return ( <div  className="background-image" style={{ backgroundImage: `url(${BACKDROPS[index]})` }} /> );
