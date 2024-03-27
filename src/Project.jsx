@@ -11,19 +11,12 @@ const Project = props => {
     const {project} = props;
     return (
       <div className="project">
-        <a
-          className="project-title"
-          href={project.live}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        
+        <span
+          className="project-title">
           {" "}
           {project.title}
-        </a>
-        <p className="project-description">{project.description}</p>
-        <div className="project-thumbnail">
-          <img src={project.image} alt="Shut up, eslint." />
-        </div>
+        </span>
         <h4>
           <a
             className="project-link"
@@ -33,15 +26,22 @@ const Project = props => {
           >
             Github
           </a>
-          <a
-            className="project-link"
-            href={project.live}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Live Demo
-          </a>
+
+          {project.live !== "Pending" &&
+            <a
+              className="project-link"
+              href={project.live}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Live Demo
+            </a>
+          }
         </h4>
+        <p className="project-description">{project.description}</p>
+        <div className="project-thumbnail">
+          <img src={project.image} alt="This is an alt." />
+        </div>
       </div>
     );
 }
@@ -51,3 +51,12 @@ Project.propTypes = {
 }
 
 export default Project;
+
+/**
+ *    <a
+          className="project-title"
+          href={project.live}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+ */
