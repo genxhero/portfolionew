@@ -5,19 +5,29 @@
  * 
  */
 
-import React, {useState} from 'react';
+import React, {useState, useRef} from 'react';
 import $ from 'jquery';
+import spartahead from './images/spartahead.png';
+
 
 const SpartaClicky =  () => {
     const [bouncing, toggleBounce] = useState(false)
+
     const bounce = async () => {
-        // toggleBounce(true);
+        
+        if (bouncing) {
+            return false;
+        }
+
+        toggleBounce(true);
+        console.log("State of bouncing is:", bouncing)
+
         // let phaseOne = new Promise((resolve, reject) => {
         //     $('#sparta-clicky').css("-webkit-transform", "translate(-100px, 600px) rotate(-90deg)")
         // })
 
         const firstMove = () => {$('#sparta-clicky').css({
-            top: 600,
+            top: 900,
             right: 200,
             visibility: 'visible',
             WebkitTransform: 'rotate(90deg)'
@@ -33,7 +43,7 @@ const SpartaClicky =  () => {
 
         const thirdMove = () => {
             $('#sparta-clicky').css({
-                top: 600,
+                top: 900,
                 right: 600,
                 WebkitTransform: 'rotate(270deg)'
             })
@@ -49,18 +59,36 @@ const SpartaClicky =  () => {
 
         const fifthMove = () => {
                 $('#sparta-clicky').css({
-                    top: 600,
+                    top: 900,
                     right: 1000,
                     WebkitTransform: 'rotate(90deg)'
                 })
         }
 
+        const sixthMove = () => {
+            $('#sparta-clicky').css({
+                top: 0,
+                right: 1200,
+                WebkitTransform: 'rotate(180deg)'
+            })
+        }
+
+        const seventhMove = () => {
+            $('#sparta-clicky').css({
+                top: 900,
+                right: 1400,
+                WebkitTransform: 'rotate(270deg)'
+            })
+        }
+
 
             firstMove();
-            setTimeout(secondMove, 1000);
-            setTimeout(thirdMove, 2000);
-            setTimeout(fourthMove, 3000);
-            setTimeout(fifthMove, 4000)
+            setTimeout(secondMove, 500);
+            setTimeout(thirdMove, 1000);
+            setTimeout(fourthMove, 1500);
+            setTimeout(fifthMove, 2000);
+            setTimeout(sixthMove, 2500);
+            setTimeout(seventhMove, 3000);
         //   $('#sparta-clicky').css("-webkit-transform", "translate(-100px, 600px) rotate(-90deg)")
         //  setTimeout( () => $('#sparta-clicky').css("-webkit-transform", "translate(-800px, -1200px) rotate(-180deg)"), 1000)
         // setTimeout(() => $('#sparta-clicky').css("-webkit-transform", "translate(-1300px, 600px) rotate(-180deg)"), 1000)
@@ -80,8 +108,13 @@ const SpartaClicky =  () => {
 
         //Do a bunch of jquery, wait for thing to come back to original position, then set bouncing to false again
     }
+
     return (
-        <div className={`sparta ${bouncing ? 'bouncing' : ''}`} id="sparta-clicky" onClick={bouncing ? () => false : bounce} />
+        <div className={`sparta ${bouncing ? 'bouncing' : ''}`} 
+             style={{ backgroundImage: `url(${spartahead})`}} 
+             id="sparta-clicky" 
+             onClick={bounce} 
+        />
     )
 }
 
