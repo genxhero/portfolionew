@@ -1,29 +1,30 @@
 {
   "files": {
-    "main.css": "/portfolionew/static/css/main.2f5e4f00.chunk.css",
-    "main.js": "/portfolionew/static/js/main.6b771036.chunk.js",
-    "main.js.map": "/portfolionew/static/js/main.6b771036.chunk.js.map",
+    "main.css": "/portfolionew/static/css/main.0be9a281.chunk.css",
+    "main.js": "/portfolionew/static/js/main.30a8c54b.chunk.js",
+    "main.js.map": "/portfolionew/static/js/main.30a8c54b.chunk.js.map",
     "runtime-main.js": "/portfolionew/static/js/runtime-main.d5fa4788.js",
     "runtime-main.js.map": "/portfolionew/static/js/runtime-main.d5fa4788.js.map",
-    "static/js/2.e94b6b05.chunk.js": "/portfolionew/static/js/2.e94b6b05.chunk.js",
-    "static/js/2.e94b6b05.chunk.js.map": "/portfolionew/static/js/2.e94b6b05.chunk.js.map",
+    "static/js/2.21671fc6.chunk.js": "/portfolionew/static/js/2.21671fc6.chunk.js",
+    "static/js/2.21671fc6.chunk.js.map": "/portfolionew/static/js/2.21671fc6.chunk.js.map",
     "index.html": "/portfolionew/index.html",
-    "precache-manifest.70ceca1803dbac356f01b3f3b5ac8c15.js": "/portfolionew/precache-manifest.70ceca1803dbac356f01b3f3b5ac8c15.js",
+    "precache-manifest.e8be3ffdce1d8305cbc5e9fce7c89767.js": "/portfolionew/precache-manifest.e8be3ffdce1d8305cbc5e9fce7c89767.js",
     "service-worker.js": "/portfolionew/service-worker.js",
-    "static/css/main.2f5e4f00.chunk.css.map": "/portfolionew/static/css/main.2f5e4f00.chunk.css.map",
-    "static/js/2.e94b6b05.chunk.js.LICENSE.txt": "/portfolionew/static/js/2.e94b6b05.chunk.js.LICENSE.txt",
+    "static/css/main.0be9a281.chunk.css.map": "/portfolionew/static/css/main.0be9a281.chunk.css.map",
+    "static/js/2.21671fc6.chunk.js.LICENSE.txt": "/portfolionew/static/js/2.21671fc6.chunk.js.LICENSE.txt",
     "static/media/BG01.jpg": "/portfolionew/static/media/BG01.63b20f25.jpg",
     "static/media/BG02.jpg": "/portfolionew/static/media/BG02.276c3f25.jpg",
     "static/media/BG03.jpg": "/portfolionew/static/media/BG03.97cfe460.jpg",
     "static/media/BG04.jpg": "/portfolionew/static/media/BG04.f83dfa95.jpg",
     "static/media/BG05.jpg": "/portfolionew/static/media/BG05.6ac8ebba.jpg",
     "static/media/BG06.jpg": "/portfolionew/static/media/BG06.c28ea6d6.jpg",
-    "static/media/BG07.jpg": "/portfolionew/static/media/BG07.76432918.jpg"
+    "static/media/BG07.jpg": "/portfolionew/static/media/BG07.76432918.jpg",
+    "static/media/spartahead.png": "/portfolionew/static/media/spartahead.21a339c7.png"
   },
   "entrypoints": [
     "static/js/runtime-main.d5fa4788.js",
-    "static/js/2.e94b6b05.chunk.js",
-    "static/css/main.2f5e4f00.chunk.css",
-    "static/js/main.6b771036.chunk.js"
+    "static/js/2.21671fc6.chunk.js",
+    "static/css/main.0be9a281.chunk.css",
+    "static/js/main.30a8c54b.chunk.js"
   ]
 }
