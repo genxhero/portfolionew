@@ -9,13 +9,13 @@
     height: 7rem;
     background-repeat: no-repeat;
     transition: all 1s;
-    visibility: visible;
+    opacity: 0;
     &.bouncing {
         position: absolute;
         z-index: 10000;
         transition: all 1s;
         background-size: contain;
-        visibility: visible;
+        opacity: 100;
         background-repeat: no-repeat;
     }
 }

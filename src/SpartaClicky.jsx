@@ -20,7 +20,6 @@ const SpartaClicky =  () => {
         }
 
         toggleBounce(true);
-        console.log("State of bouncing is:", bouncing)
 
         // let phaseOne = new Promise((resolve, reject) => {
         //     $('#sparta-clicky').css("-webkit-transform", "translate(-100px, 600px) rotate(-90deg)")
@@ -30,14 +29,14 @@ const SpartaClicky =  () => {
             top: 900,
             right: 200,
             visibility: 'visible',
-            WebkitTransform: 'rotate(90deg)'
+            WebkitTransform: 'rotate(720deg)'
         })}
         
         const secondMove = () => {
             $('#sparta-clicky').css({
                 top: 0,
                 right: 400,
-                WebkitTransform: 'rotate(180deg)'
+                WebkitTransform: 'rotate(720deg)'
             })
         }
 
@@ -45,7 +44,7 @@ const SpartaClicky =  () => {
             $('#sparta-clicky').css({
                 top: 900,
                 right: 600,
-                WebkitTransform: 'rotate(270deg)'
+                WebkitTransform: 'rotate(720deg)'
             })
         }
      
@@ -53,7 +52,7 @@ const SpartaClicky =  () => {
             $('#sparta-clicky').css({
                 top: 0,
                 right: 800,
-                WebkitTransform: 'rotate(360deg)'
+                WebkitTransform: 'rotate(720deg)'
             })
         }
 
@@ -61,7 +60,7 @@ const SpartaClicky =  () => {
                 $('#sparta-clicky').css({
                     top: 900,
                     right: 1000,
-                    WebkitTransform: 'rotate(90deg)'
+                    WebkitTransform: 'rotate(720deg)'
                 })
         }
 
@@ -77,7 +76,23 @@ const SpartaClicky =  () => {
             $('#sparta-clicky').css({
                 top: 900,
                 right: 1400,
-                WebkitTransform: 'rotate(270deg)'
+                WebkitTransform: 'rotate(1080deg)'
+            })
+        }
+
+        const eighthMove = () => {
+            $('#sparta-clicky').css({
+                top: 0,
+                right: 1600,
+                WebkitTransform: 'rotate(360deg)'
+            })
+        }
+
+        const ninthMove = () => {
+            $('#sparta-clicky').css({
+                top: 900,
+                right: 2000,
+                WebkitTransform: 'rotate(360deg)'
             })
         }
 
@@ -89,6 +104,8 @@ const SpartaClicky =  () => {
             setTimeout(fifthMove, 2000);
             setTimeout(sixthMove, 2500);
             setTimeout(seventhMove, 3000);
+            setTimeout(eighthMove, 3500);
+            setTimeout(ninthMove, 4000);
         //   $('#sparta-clicky').css("-webkit-transform", "translate(-100px, 600px) rotate(-90deg)")
         //  setTimeout( () => $('#sparta-clicky').css("-webkit-transform", "translate(-800px, -1200px) rotate(-180deg)"), 1000)
         // setTimeout(() => $('#sparta-clicky').css("-webkit-transform", "translate(-1300px, 600px) rotate(-180deg)"), 1000)
